@@ -56,7 +56,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val bogor = LatLng (-6.5950181 , 106.7218509)
 
         mMap.addMarker(MarkerOptions().position(jakarta).title("Jarak Bekasi Ke Jakarta $distancel"))
-        mMap.addMarker(MarkerOptions().position(jakarta).title("Marker in Jakarta"))
+//        mMap.addMarker(MarkerOptions().position(jakarta).title("Marker in Jakarta"))
         mMap.addMarker(MarkerOptions().position(bekasi).title("Marker in Bekasi"))
         mMap.addMarker(MarkerOptions().position(serang).title("Marker in Serang"))
         mMap.addMarker(MarkerOptions().position(bogor).title("Marker in Bogor"))

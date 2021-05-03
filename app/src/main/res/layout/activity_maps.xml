@@ -4,8 +4,7 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
+    tools:context=".MapsActivity"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:paddingBottom="30dp"
@@ -15,7 +14,8 @@
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        tools:context=".MapsActivity" />
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_margin="10dp"
@@ -40,6 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="18dp"
+            android:inputType="textMultiLine"
             android:hint="Masukkan Lokasi Anda"/>
     </LinearLayout>
     <LinearLayout
@@ -59,6 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="18dp"
+            android:inputType="textMultiLine"
             android:hint="Masukkan Lokasi Anda"/>
     </LinearLayout>
 
@@ -77,7 +79,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hasil"
+            android:text="Jarak Kedua Lokasi"
             android:textSize="18dp"
             android:textStyle="italic|bold"
             android:textColor="@color/black"/>
