@@ -60,7 +60,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(bekasi).title("Marker in Bekasi"))
         mMap.addMarker(MarkerOptions().position(serang).title("Marker in Serang"))
         mMap.addMarker(MarkerOptions().position(bogor).title("Marker in Bogor"))
-
+/////////
         mMap.setOnCameraIdleListener {
             var currentLocation: LatLng = mMap.cameraPosition.target
             val geocoder = Geocoder(this)
@@ -68,7 +68,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             mMap.clear()
             mMap.addMarker(MarkerOptions().position(currentLocation).title("Position"))
         }
-
+////////////////////
         mMap.moveCamera(CameraUpdateFactory.newLatLng(jakarta))
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(jakarta , 16f))
 
