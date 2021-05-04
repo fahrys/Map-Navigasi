@@ -16,12 +16,30 @@
         android:layout_height="300dp"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         />
-    <Button
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        android:text="set"
-        android:layout_gravity="center"/>
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="300dp"
+            android:id="@+id/btnset"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="set"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/btnreset"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="18dp"
+            android:id="@+id/etlokasi1"
             android:inputType="textMultiLine"
             android:hint="Masukkan Lokasi Anda"/>
     </LinearLayout>
@@ -60,6 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="18dp"
+            android:id="@+id/etlokasi2"
             android:inputType="textMultiLine"
             android:hint="Masukkan Lokasi Anda"/>
     </LinearLayout>
@@ -67,6 +87,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_margin="10dp"
+        android:id="@+id/btnhitung"
         android:layout_height="wrap_content"
         android:text="hitung jarak"
         android:layout_gravity="center"/>
