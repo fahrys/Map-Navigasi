@@ -13,7 +13,7 @@
     <fragment
         android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         />
 
@@ -50,17 +50,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lokasi 1 = "
-            android:textStyle="italic|bold"
-            android:textColor="@color/black"/>
+            android:id="@+id/tvlokasi1"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold" />
 
-        <EditText
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="18dp"
-            android:id="@+id/etlokasi1"
-            android:inputType="textMultiLine"
-            android:hint="Masukkan Lokasi Anda"/>
+            android:id="@+id/tvlati1"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:id="@+id/tvlongti1"
+            android:inputType="textMultiLine" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,17 +79,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lokasi 2 = "
-            android:textStyle="italic|bold"
-            android:textColor="@color/black"/>
-
-        <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/tvlokasi2"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold" />
+        <TextView
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="18dp"
-            android:id="@+id/etlokasi2"
-            android:inputType="textMultiLine"
-            android:hint="Masukkan Lokasi Anda"/>
+            android:id="@+id/tvlati2"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:id="@+id/tvlongti2"
+            android:inputType="textMultiLine" />
     </LinearLayout>
 
     <Button
@@ -102,6 +117,7 @@
             android:layout_height="wrap_content"
             android:text="Jarak Kedua Lokasi"
             android:textSize="18dp"
+            android:id="@+id/tvkedua"
             android:textStyle="italic|bold"
             android:textColor="@color/black"/>
 
