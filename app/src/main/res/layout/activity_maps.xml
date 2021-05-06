@@ -13,7 +13,8 @@
     <fragment
         android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         />
 
@@ -59,8 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:textSize="18dp"
-            android:id="@+id/tvlati1"
-            android:inputType="textMultiLine" />
+            android:id="@+id/tvlati1" />
 
         <TextView
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
             android:layout_marginLeft="5dp"
             android:textSize="18dp"
             android:id="@+id/tvlongti1"
-            android:inputType="textMultiLine" />
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
