@@ -24,7 +24,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:layout_width="270dp"
+            android:layout_width="250dp"
             android:id="@+id/btnset"
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
